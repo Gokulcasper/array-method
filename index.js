@@ -37,3 +37,23 @@
 //     return num > 10;
 // })
 // console.log(res)
+
+//------IndexOf-----------
+// let names = ["Gokul","Raj","Bhuvi"];
+// let res = names.indexOf("Raj");
+// console.log(res)
+// names[res] = "Baba";
+// console.log(names)
+// let res1 = names.indexOf("Mani");
+// console.log(res1)
+// if(res1 > -1)
+// {
+//     console.log("yeeee, Happy!");
+// }else{
+//     console.log("Ohhh, Sad!");
+// }
+
+//-------LastIndexOf-------------
+// let values = [10,20,50,40,50,60,30,20,70,10,90];
+// let res = values.lastIndexOf(20);
+// console.log(res)
