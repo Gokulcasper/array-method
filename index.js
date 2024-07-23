@@ -10,7 +10,7 @@
 //     console.log("Sad!")
 // }
 
-//------Find-------
+//------Find-------//(return array or object Values)
 // let person = [
 //     {
 //         name:"Gokul",
@@ -68,7 +68,7 @@
 //
 
 
-// ---------------- ADDING ELEMENTS -------------------
+// ---------------- ADDING ELEMENTS -----------------------
 
 //-------Push--------
 // let number = [1,2,3,4,5];
@@ -115,3 +115,21 @@
 // console.log(deleted)
 // console.log(number) 
 
+// ------------ COMBINING & SLICING --------------
+
+//------Concat-------
+// let a=[1,2,3,4,5];
+// let b=[9,8,7,6];
+// let c=[11,22,33,44,55];
+// let d=a.concat(b,c);
+// console.log(d);
+// let e=d.push(4);
+// console.log(d);
+// let f=d.shift();
+// console.log(d);
+
+//------slice-----
+// let number = [1,2,3,4,5];
+// let number2=number.slice(1,3)
+// console.log(number)
+// console.log(number2)
