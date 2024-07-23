@@ -133,3 +133,33 @@
 // let number2=number.slice(1,3)
 // console.log(number)
 // console.log(number2)
+
+// ------------- JOINING ARRAY ELEMENT -------------------
+
+//--------Join--------
+// let place = ["Ooty","Wayanad","Kodaikanal","Varkalaa"];
+// let touristPlace = place.join(" / ");
+// console.log("I wanna Visit "+touristPlace);
+
+// ------------- SORTING ARRAY ELEMENT ------------------
+
+//--------Sort--------
+// let number=[100,500,34,5,350,120,600];
+// number.sort((a,b)=>{
+//     return a-b;
+// });
+// console.log(number);
+let student = [
+    {id:3,name:"Gokul"},
+    {id:2,name:"Raj"},
+    {id:4,name:"Mani"},
+]
+// student.sort((a,b)=>{
+//     return a.id - b.id;
+// });
+student.sort((a,b)=>{
+    if(a.name < b.name) return -1;
+    if(a.name > b.name) return 1;
+    return 0;
+});
+console.log(student);
