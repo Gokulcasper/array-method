@@ -85,8 +85,33 @@
 
 //------Splice--------
 // let number = [5,4,3,9,8];
-// let deleted = number.splice(2,1,7,6);
+// let deleted = number.splice(2,0,7,6);
 // console.log(deleted)
 // console.log(number) 
 
 // ------------------ REMOVING ELEMENTS ---------------------
+
+//-------Pop--------
+// let number = [1,2,3,4,5];
+// let value = number.pop();
+// console.log(number)
+// console.log(value)
+// let value1 = number.pop();
+// console.log(number);
+// console.log(value1)
+// let value2 = number.pop();
+// console.log(number);
+// console.log(value2)
+
+//-------Shift-------
+// let number = [1,2,3,4,5];
+// let total = number.shift();
+// console.log(number);
+// console.log(total);
+
+//-------Splice------
+// let number = [5,4,3,9,8];
+// let deleted = number.splice(3,1);
+// console.log(deleted)
+// console.log(number) 
+
