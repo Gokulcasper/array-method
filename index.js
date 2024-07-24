@@ -1,6 +1,6 @@
 // ---------------- FINDING  ELEMENTS -----------------
 
-// -----Include Methods-------
+// -----Include Methods-------(return give value is have or not )
 // let myArray= ["Apple","Carrot","Orange"];
 // let res = myArray.includes("Banana");
 // console.log(res) //False
@@ -10,7 +10,7 @@
 //     console.log("Sad!")
 // }
 
-//------Find-------//(return array or object Values)
+//------Find-------//(return array values or object Values by using key values)
 // let person = [
 //     {
 //         name:"Gokul",
@@ -35,10 +35,10 @@
 // }
 // console.log(res1);
 
-//------FindIndex--------
+//------FindIndex-------- (Find index of give value)
 // let number=[10,20,30,40];
 // let res = number.findIndex((num)=>{
-//     return num > 10;
+//     return num > 30;
 // })
 // console.log(res)
 // let result = number.findIndex((value)=>{
@@ -46,7 +46,7 @@
 // })
 // console.log(result)
 
-// ------IndexOf-----------
+// ------IndexOf----------- (Find Index & Also change values by using that find index)
 // let names = ["Gokul","Raj","Bhuvi"];
 // let res = names.indexOf("Raj");
 // console.log(res)
@@ -54,14 +54,14 @@
 // console.log(names)
 // let res1 = names.indexOf("Mani");
 // console.log(res1)
-// if(res1 > -1)
+// if(res1 === -1)
 // {
 //     console.log("yeeee, Happy!");
 // }else{
 //     console.log("Ohhh, Sad!");
 // }
 
-//-------LastIndexOf-------------
+//-------LastIndexOf------------- //(Find repeted last value)
 // let values = [10,20,50,40,50,60,30,20,70,10,20,50];
 // let res = values.lastIndexOf(20);
 // console.log(res)
@@ -70,12 +70,12 @@
 
 // ---------------- ADDING ELEMENTS -----------------------
 
-//-------Push--------
+//-------Push-------- (add the give value at end of an array)
 // let number = [1,2,3,4,5];
 // let value = number.push(6,7);
 // console.log(number,value);
 
-//------Unshift-------
+//------Unshift------- (add the give value at Starting of an array)
 // let number = [1,2,3,4,5];
 // number.unshift(0);
 // number.unshift(1,-1);
@@ -83,15 +83,19 @@
 // console.log(number);
 // console.log(total);
 
-//------Splice--------
+//------Splice-------- (index of correction value then deleted values, optionally given added value)
+// let number = [1,2,9,4,5,6,7];
+// let deleted = number.splice(2,0,3);
+// console.log(deleted)
+// console.log(number) 
 // let number = [5,4,3,9,8];
-// let deleted = number.splice(2,0,7,6);
+// let deleted = number.splice(2,3);
 // console.log(deleted)
 // console.log(number) 
 
 // ------------------ REMOVING ELEMENTS ---------------------
 
-//-------Pop--------
+//-------Pop-------- (remove the value at end of an array)
 // let number = [1,2,3,4,5];
 // let value = number.pop();
 // console.log(number)
@@ -103,13 +107,13 @@
 // console.log(number);
 // console.log(value2)
 
-//-------Shift-------
+//-------Shift------- (remove the value at Starting of an array)
 // let number = [1,2,3,4,5];
 // let total = number.shift();
 // console.log(number);
 // console.log(total);
 
-//-------Splice------
+//-------Splice------ (index of correction value then deleted values, optionally given added value)
 // let number = [5,4,3,9,8];
 // let deleted = number.splice(3,1);
 // console.log(deleted)
@@ -117,7 +121,7 @@
 
 // ------------ COMBINING & SLICING --------------
 
-//------Concat-------
+//------Concat------- (Combine two or more arrays)
 // let a=[1,2,3,4,5];
 // let b=[9,8,7,6];
 // let c=[11,22,33,44,55];
@@ -149,17 +153,17 @@
 //     return a-b;
 // });
 // console.log(number);
-let student = [
-    {id:3,name:"Gokul"},
-    {id:2,name:"Raj"},
-    {id:4,name:"Mani"},
-]
+// let student = [
+//     {id:3,name:"Gokul"},
+//     {id:2,name:"Raj"},
+//     {id:4,name:"Mani"},
+// ]
 // student.sort((a,b)=>{
 //     return a.id - b.id;
 // });
-student.sort((a,b)=>{
-    if(a.name < b.name) return -1;
-    if(a.name > b.name) return 1;
-    return 0;
-});
-console.log(student);
+// student.sort((a,b)=>{
+//     if(a.name < b.name) return -1;
+//     if(a.name > b.name) return 1;
+//     return 0;
+// });
+// console.log(student);
