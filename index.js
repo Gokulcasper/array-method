@@ -132,22 +132,22 @@
 // let f=d.shift();
 // console.log(d);
 
-//------slice-----
-// let number = [1,2,3,4,5];
-// let number2=number.slice(1,3)
+//------slice-----(index of value to wanted value)
+// let number = [4,9,3,7,5];
+// let number2=number.slice(3,5)
 // console.log(number)
 // console.log(number2)
 
 // ------------- JOINING ARRAY ELEMENT -------------------
 
-//--------Join--------
+//--------Join-------- (seperated by given Symbol)
 // let place = ["Ooty","Wayanad","Kodaikanal","Varkalaa"];
 // let touristPlace = place.join(" / ");
 // console.log("I wanna Visit "+touristPlace);
 
 // ------------- SORTING ARRAY ELEMENT ------------------
 
-//--------Sort--------
+//--------Sort-------- (arrange given element by using two key values)
 // let number=[100,500,34,5,350,120,600];
 // number.sort((a,b)=>{
 //     return a-b;
