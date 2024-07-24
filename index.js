@@ -167,3 +167,38 @@
 //     return 0;
 // });
 // console.log(student);
+
+// ------------------- Filter --------------------------
+// let humanNames=["Gokul","Raj","Mani","Mala"];
+// let result = humanNames.filter((name)=>{
+//     return name.length <= 3;
+// })
+// console.log(result);
+
+// ------------------- Split --------------------------
+// let humanNames="I am Leaning About Javascript";
+// let result = humanNames.split('');
+// console.log(result);
+
+// -------------------- Map -------------------------
+// let value=[1,2,3,4,5];
+// let result = value.map((val)=>{
+//     return val*10;
+// })
+// console.log(result);
+const people=[
+    {id:1,fName:"gokul",lName:"raj"},
+    {id:2,fName:"mani",lName:"kandan"},
+    {id:3,fName:"thiru",lName:"mala"},
+]
+// let res = people.map((pep)=>{
+//     return [pep.fName,pep.lName].join("-");
+//     // return pep.fName+pep.lName;
+// })
+// console.log(res);
+let res = people.map((pep)=>{
+let fullNAME = [pep.fName,pep.lName].join(" ");
+let result ={id:pep.id,fullName:fullNAME};
+return result;
+})
+console.log(res)
