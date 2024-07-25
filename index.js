@@ -10,7 +10,7 @@
 //     console.log("Sad!")
 // }
 
-//------Find-------//(return array values or object Values by using key values)
+//------Find-------//(return first array values or object Values by using key values)
 // let person = [
 //     {
 //         name:"Gokul",
@@ -35,7 +35,7 @@
 // }
 // console.log(res1);
 
-//------FindIndex-------- (Find index of give value)
+//------FindIndex-------- (Find first index of give value)
 // let number=[10,20,30,40];
 // let res = number.findIndex((num)=>{
 //     return num > 30;
@@ -46,7 +46,7 @@
 // })
 // console.log(result)
 
-// ------IndexOf----------- (Find Index & Also change values by using that find index)
+// ------IndexOf----------- (Find first Index & Also change values by using that find index)
 // let names = ["Gokul","Raj","Bhuvi"];
 // let res = names.indexOf("Raj");
 // console.log(res)
@@ -61,7 +61,7 @@
 //     console.log("Ohhh, Sad!");
 // }
 
-//-------LastIndexOf------------- //(Find repeted last value)
+//-------LastIndexOf------------- //(Find last index repeted last value)
 // let values = [10,20,50,40,50,60,30,20,70,10,20,50];
 // let res = values.lastIndexOf(20);
 // console.log(res)
@@ -84,6 +84,8 @@
 // console.log(total);
 
 //------Splice-------- (index of correction value then deleted values, optionally given added value)
+//arrayname.splice(indexnumber,number of elements,adding elements)
+
 // let number = [1,2,9,4,5,6,7];
 // let deleted = number.splice(2,0,3);
 // console.log(deleted)
@@ -114,8 +116,14 @@
 // console.log(total);
 
 //-------Splice------ (index of correction value then deleted values, optionally given added value)
+// arrayname.slice(indexnumber,n-1)
+
 // let number = [5,4,3,9,8];
 // let deleted = number.splice(3,1);
+// console.log(deleted)
+// console.log(number) 
+// let number = [5,4,3,9,8];
+// let deleted = number.splice(3,-1);
 // console.log(deleted)
 // console.log(number) 
 
@@ -168,7 +176,7 @@
 // });
 // console.log(student);
 
-// ------------------- Filter --------------------------
+// ------------------- Filter --------------------------(Find that selective Value & give output)
 // let humanNames=["Gokul","Raj","Mani","Mala"];
 // let result = humanNames.filter((name)=>{
 //     return name.length <= 3;
@@ -180,7 +188,7 @@
 // let result = humanNames.split('');
 // console.log(result);
 
-// -------------------- Map -------------------------
+// -------------------- Map -------------------------(map is callback function & return value, inside map function we use all methods)
 // let value=[1,2,3,4,5];
 // let result = value.map((val)=>{
 //     return val*10;
